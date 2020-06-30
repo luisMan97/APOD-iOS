@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E34C8E824A6CDC600FFA583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34C8E724A6CDC600FFA583 /* AppDelegate.swift */; };
+		4E34C8EA24A6CDC600FFA583 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34C8E924A6CDC600FFA583 /* SceneDelegate.swift */; };
+		4E34C8EC24A6CDC600FFA583 /* ApodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34C8EB24A6CDC600FFA583 /* ApodListView.swift */; };
+		4E34C8EE24A6CDCD00FFA583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E34C8ED24A6CDCD00FFA583 /* Assets.xcassets */; };
+		4E34C8F124A6CDCD00FFA583 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E34C8F024A6CDCD00FFA583 /* Preview Assets.xcassets */; };
+		4E34C8F424A6CDCD00FFA583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E34C8F224A6CDCD00FFA583 /* LaunchScreen.storyboard */; };
+		4E34C90024A8E79F00FFA583 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34C8FF24A8E79F00FFA583 /* APIRouter.swift */; };
+		4E34C90224A8E7B500FFA583 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34C90124A8E7B500FFA583 /* APIManager.swift */; };
+		4E34C90924A8E92B00FFA583 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34C90824A8E92B00FFA583 /* HTTPMethods.swift */; };
+		4E34C90B24A8E94800FFA583 /* APIManagerConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E34C90A24A8E94800FFA583 /* APIManagerConstans.swift */; };
+		4EDDC8A824AAA1EC00486404 /* ApodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8A724AAA1EC00486404 /* ApodRow.swift */; };
+		4EDDC8AA24AAA25100486404 /* ApodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8A924AAA25100486404 /* ApodViewModel.swift */; };
+		4EDDC8AF24AAAA6300486404 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8AE24AAAA6300486404 /* AppCoordinator.swift */; };
+		4EDDC8B224AAEB3900486404 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8B124AAEB3900486404 /* DateHelper.swift */; };
+		4EDDC8B524AAEB5B00486404 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8B424AAEB5B00486404 /* StringExtensions.swift */; };
+		4EDDC8B724AAEB7100486404 /* ExtensionsDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8B624AAEB7100486404 /* ExtensionsDate.swift */; };
+		4EDDC8BA24AAF23200486404 /* ApodDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8B924AAF23200486404 /* ApodDetailView.swift */; };
+		4EDDC8C024AAF2B200486404 /* ApodDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8BF24AAF2B200486404 /* ApodDetailCoordinator.swift */; };
+		4EDDC8C224AAF2FB00486404 /* ApodDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8C124AAF2FB00486404 /* ApodDetailViewModel.swift */; };
+		4EDDC8C424AAF89500486404 /* UINavigationBarAppearanceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8C324AAF89500486404 /* UINavigationBarAppearanceExtensions.swift */; };
+		4EDDC8C624AAF8AD00486404 /* UINavigationBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8C524AAF8AD00486404 /* UINavigationBarExtensions.swift */; };
+		4EDDC8CA24AAFDA600486404 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8C924AAFDA600486404 /* AsyncImage.swift */; };
+		4EDDC8CC24AAFFBC00486404 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8CB24AAFFBC00486404 /* ImageLoader.swift */; };
+		4EDDC8CE24AB098200486404 /* LoadingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDDC8CD24AB098200486404 /* LoadingBarView.swift */; };
+		4EE98CC424AA747C0095690E /* ApodListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE98CC324AA747C0095690E /* ApodListViewModel.swift */; };
+		4EE98CC724AA75DC0095690E /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE98CC624AA75DC0095690E /* Apod.swift */; };
+		4EE98CCD24AA7BB10095690E /* ApodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE98CCC24AA7BB10095690E /* ApodRepository.swift */; };
+		4EE98CD024AA7C5B0095690E /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE98CCF24AA7C5B0095690E /* ResponseError.swift */; };
+		4EE98CD224AA7E500095690E /* ApodListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE98CD124AA7E500095690E /* ApodListCoordinator.swift */; };
+		4EE98CD524AA80D50095690E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE98CD424AA80D50095690E /* LoadingView.swift */; };
+		4EE98CD724AA811A0095690E /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE98CD624AA811A0095690E /* ActivityIndicator.swift */; };
+		4EE98CE124AA83A60095690E /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE98CE024AA83A60095690E /* RootView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4E34C8E424A6CDC600FFA583 /* APOD-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APOD-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E34C8E724A6CDC600FFA583 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E34C8E924A6CDC600FFA583 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4E34C8EB24A6CDC600FFA583 /* ApodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodListView.swift; sourceTree = "<group>"; };
+		4E34C8ED24A6CDCD00FFA583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E34C8F024A6CDCD00FFA583 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E34C8F324A6CDCD00FFA583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E34C8F524A6CDCD00FFA583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E34C8FF24A8E79F00FFA583 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		4E34C90124A8E7B500FFA583 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4E34C90824A8E92B00FFA583 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		4E34C90A24A8E94800FFA583 /* APIManagerConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerConstans.swift; sourceTree = "<group>"; };
+		4EDDC8A724AAA1EC00486404 /* ApodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodRow.swift; sourceTree = "<group>"; };
+		4EDDC8A924AAA25100486404 /* ApodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewModel.swift; sourceTree = "<group>"; };
+		4EDDC8AE24AAAA6300486404 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4EDDC8B124AAEB3900486404 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		4EDDC8B424AAEB5B00486404 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		4EDDC8B624AAEB7100486404 /* ExtensionsDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsDate.swift; sourceTree = "<group>"; };
+		4EDDC8B924AAF23200486404 /* ApodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodDetailView.swift; sourceTree = "<group>"; };
+		4EDDC8BF24AAF2B200486404 /* ApodDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodDetailCoordinator.swift; sourceTree = "<group>"; };
+		4EDDC8C124AAF2FB00486404 /* ApodDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodDetailViewModel.swift; sourceTree = "<group>"; };
+		4EDDC8C324AAF89500486404 /* UINavigationBarAppearanceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarAppearanceExtensions.swift; sourceTree = "<group>"; };
+		4EDDC8C524AAF8AD00486404 /* UINavigationBarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtensions.swift; sourceTree = "<group>"; };
+		4EDDC8C924AAFDA600486404 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		4EDDC8CB24AAFFBC00486404 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		4EDDC8CD24AB098200486404 /* LoadingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingBarView.swift; sourceTree = "<group>"; };
+		4EE98CC324AA747C0095690E /* ApodListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodListViewModel.swift; sourceTree = "<group>"; };
+		4EE98CC624AA75DC0095690E /* Apod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apod.swift; sourceTree = "<group>"; };
+		4EE98CCC24AA7BB10095690E /* ApodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodRepository.swift; sourceTree = "<group>"; };
+		4EE98CCF24AA7C5B0095690E /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		4EE98CD124AA7E500095690E /* ApodListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodListCoordinator.swift; sourceTree = "<group>"; };
+		4EE98CD424AA80D50095690E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4EE98CD624AA811A0095690E /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		4EE98CE024AA83A60095690E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E34C8E124A6CDC600FFA583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E34C8DB24A6CDC600FFA583 = {
+			isa = PBXGroup;
+			children = (
+				4E34C8E624A6CDC600FFA583 /* APOD-iOS */,
+				4E34C8E524A6CDC600FFA583 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E34C8E524A6CDC600FFA583 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E34C8E424A6CDC600FFA583 /* APOD-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E34C8E624A6CDC600FFA583 /* APOD-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E34C8FE24A8E77700FFA583 /* APIManager */,
+				4E34C8FC24A8E6EC00FFA583 /* Assets */,
+				4E34C8FB24A8E69D00FFA583 /* Main */,
+				4EE98CCE24AA7C500095690E /* Models */,
+				4E34C8FD24A8E70900FFA583 /* Sections */,
+				4E34C90524A8E88C00FFA583 /* Utils */,
+				4E34C8EF24A6CDCD00FFA583 /* Preview Content */,
+			);
+			path = "APOD-iOS";
+			sourceTree = "<group>";
+		};
+		4E34C8EF24A6CDCD00FFA583 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4E34C8F024A6CDCD00FFA583 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E34C8FB24A8E69D00FFA583 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4EE98CDF24AA83960095690E /* Root */,
+				4E34C8F224A6CDCD00FFA583 /* LaunchScreen.storyboard */,
+				4E34C8E724A6CDC600FFA583 /* AppDelegate.swift */,
+				4E34C8F524A6CDCD00FFA583 /* Info.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4E34C8FC24A8E6EC00FFA583 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4E34C8ED24A6CDCD00FFA583 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4E34C8FD24A8E70900FFA583 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDC8A024AAA11B00486404 /* ApodList */,
+				4EDDC8B824AAF21D00486404 /* ApodDetail */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		4E34C8FE24A8E77700FFA583 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				4E34C90124A8E7B500FFA583 /* APIManager.swift */,
+				4E34C8FF24A8E79F00FFA583 /* APIRouter.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		4E34C90524A8E88C00FFA583 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDC8B324AAEB4C00486404 /* Extensions */,
+				4EDDC8B024AAEB2E00486404 /* Helpers */,
+				4EE98CD324AA80C50095690E /* Views */,
+				4E34C90624A8E8A700FFA583 /* Constants */,
+				4E34C90724A8E8B800FFA583 /* Enums */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4E34C90624A8E8A700FFA583 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4E34C90824A8E92B00FFA583 /* HTTPMethods.swift */,
+				4E34C90A24A8E94800FFA583 /* APIManagerConstans.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4E34C90724A8E8B800FFA583 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		4EDDC8A024AAA11B00486404 /* ApodList */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDC8A424AAA15200486404 /* Repository */,
+				4EDDC8A124AAA12D00486404 /* Model */,
+				4EDDC8A224AAA13400486404 /* View */,
+				4EDDC8A324AAA13800486404 /* ViewModel */,
+				4EDDC8A524AAA16200486404 /* Coordinator */,
+			);
+			path = ApodList;
+			sourceTree = "<group>";
+		};
+		4EDDC8A124AAA12D00486404 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EE98CC624AA75DC0095690E /* Apod.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EDDC8A224AAA13400486404 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E34C8EB24A6CDC600FFA583 /* ApodListView.swift */,
+				4EDDC8A724AAA1EC00486404 /* ApodRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EDDC8A324AAA13800486404 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EE98CC324AA747C0095690E /* ApodListViewModel.swift */,
+				4EDDC8A924AAA25100486404 /* ApodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4EDDC8A424AAA15200486404 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4EE98CCC24AA7BB10095690E /* ApodRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4EDDC8A524AAA16200486404 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4EE98CD124AA7E500095690E /* ApodListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4EDDC8B024AAEB2E00486404 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDC8B124AAEB3900486404 /* DateHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4EDDC8B324AAEB4C00486404 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDC8B424AAEB5B00486404 /* StringExtensions.swift */,
+				4EDDC8B624AAEB7100486404 /* ExtensionsDate.swift */,
+				4EDDC8C324AAF89500486404 /* UINavigationBarAppearanceExtensions.swift */,
+				4EDDC8C524AAF8AD00486404 /* UINavigationBarExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4EDDC8B824AAF21D00486404 /* ApodDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDC8BB24AAF27600486404 /* Model */,
+				4EDDC8BD24AAF28E00486404 /* ViewModel */,
+				4EDDC8BC24AAF28700486404 /* View */,
+				4EDDC8BE24AAF29C00486404 /* Coordinator */,
+			);
+			path = ApodDetail;
+			sourceTree = "<group>";
+		};
+		4EDDC8BB24AAF27600486404 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EDDC8BC24AAF28700486404 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDC8B924AAF23200486404 /* ApodDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EDDC8BD24AAF28E00486404 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDC8C124AAF2FB00486404 /* ApodDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4EDDC8BE24AAF29C00486404 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDC8BF24AAF2B200486404 /* ApodDetailCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4EDDC8C824AAFD9B00486404 /* AsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDC8C924AAFDA600486404 /* AsyncImage.swift */,
+				4EDDC8CB24AAFFBC00486404 /* ImageLoader.swift */,
+			);
+			path = AsyncImage;
+			sourceTree = "<group>";
+		};
+		4EE98CCE24AA7C500095690E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EE98CCF24AA7C5B0095690E /* ResponseError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4EE98CD324AA80C50095690E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4EDDC8C824AAFD9B00486404 /* AsyncImage */,
+				4EE98CD824AA811D0095690E /* LoadingView */,
+				4EDDC8CD24AB098200486404 /* LoadingBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4EE98CD824AA811D0095690E /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				4EE98CD424AA80D50095690E /* LoadingView.swift */,
+				4EE98CD624AA811A0095690E /* ActivityIndicator.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		4EE98CDF24AA83960095690E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				4E34C8E924A6CDC600FFA583 /* SceneDelegate.swift */,
+				4EE98CE024AA83A60095690E /* RootView.swift */,
+				4EDDC8AE24AAAA6300486404 /* AppCoordinator.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E34C8E324A6CDC600FFA583 /* APOD-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E34C8F824A6CDCD00FFA583 /* Build configuration list for PBXNativeTarget "APOD-iOS" */;
+			buildPhases = (
+				4E34C8E024A6CDC600FFA583 /* Sources */,
+				4E34C8E124A6CDC600FFA583 /* Frameworks */,
+				4E34C8E224A6CDC600FFA583 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "APOD-iOS";
+			productName = "APOD-iOS";
+			productReference = 4E34C8E424A6CDC600FFA583 /* APOD-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E34C8DC24A6CDC600FFA583 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Jorge Luis Rivera Ladino";
+				TargetAttributes = {
+					4E34C8E324A6CDC600FFA583 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 4E34C8DF24A6CDC600FFA583 /* Build configuration list for PBXProject "APOD-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E34C8DB24A6CDC600FFA583;
+			productRefGroup = 4E34C8E524A6CDC600FFA583 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E34C8E324A6CDC600FFA583 /* APOD-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E34C8E224A6CDC600FFA583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E34C8F424A6CDCD00FFA583 /* LaunchScreen.storyboard in Resources */,
+				4E34C8F124A6CDCD00FFA583 /* Preview Assets.xcassets in Resources */,
+				4E34C8EE24A6CDCD00FFA583 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E34C8E024A6CDC600FFA583 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E34C8E824A6CDC600FFA583 /* AppDelegate.swift in Sources */,
+				4EDDC8CA24AAFDA600486404 /* AsyncImage.swift in Sources */,
+				4E34C8EA24A6CDC600FFA583 /* SceneDelegate.swift in Sources */,
+				4E34C90924A8E92B00FFA583 /* HTTPMethods.swift in Sources */,
+				4E34C90B24A8E94800FFA583 /* APIManagerConstans.swift in Sources */,
+				4EDDC8A824AAA1EC00486404 /* ApodRow.swift in Sources */,
+				4EDDC8BA24AAF23200486404 /* ApodDetailView.swift in Sources */,
+				4EE98CD724AA811A0095690E /* ActivityIndicator.swift in Sources */,
+				4EDDC8C624AAF8AD00486404 /* UINavigationBarExtensions.swift in Sources */,
+				4EDDC8C224AAF2FB00486404 /* ApodDetailViewModel.swift in Sources */,
+				4EE98CD224AA7E500095690E /* ApodListCoordinator.swift in Sources */,
+				4E34C90224A8E7B500FFA583 /* APIManager.swift in Sources */,
+				4EDDC8C024AAF2B200486404 /* ApodDetailCoordinator.swift in Sources */,
+				4EDDC8AA24AAA25100486404 /* ApodViewModel.swift in Sources */,
+				4EDDC8CC24AAFFBC00486404 /* ImageLoader.swift in Sources */,
+				4EDDC8B224AAEB3900486404 /* DateHelper.swift in Sources */,
+				4EE98CD024AA7C5B0095690E /* ResponseError.swift in Sources */,
+				4E34C90024A8E79F00FFA583 /* APIRouter.swift in Sources */,
+				4EDDC8B724AAEB7100486404 /* ExtensionsDate.swift in Sources */,
+				4EDDC8B524AAEB5B00486404 /* StringExtensions.swift in Sources */,
+				4EE98CC724AA75DC0095690E /* Apod.swift in Sources */,
+				4EE98CCD24AA7BB10095690E /* ApodRepository.swift in Sources */,
+				4EE98CC424AA747C0095690E /* ApodListViewModel.swift in Sources */,
+				4EDDC8AF24AAAA6300486404 /* AppCoordinator.swift in Sources */,
+				4EE98CD524AA80D50095690E /* LoadingView.swift in Sources */,
+				4E34C8EC24A6CDC600FFA583 /* ApodListView.swift in Sources */,
+				4EDDC8CE24AB098200486404 /* LoadingBarView.swift in Sources */,
+				4EDDC8C424AAF89500486404 /* UINavigationBarAppearanceExtensions.swift in Sources */,
+				4EE98CE124AA83A60095690E /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4E34C8F224A6CDCD00FFA583 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E34C8F324A6CDCD00FFA583 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E34C8F624A6CDCD00FFA583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E34C8F724A6CDCD00FFA583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E34C8F924A6CDCD00FFA583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"APOD-iOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "APOD-iOS/Main/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.colegium.TeacherTrack-Mobile.APOD-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E34C8FA24A6CDCD00FFA583 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"APOD-iOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "APOD-iOS/Main/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.colegium.TeacherTrack-Mobile.APOD-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E34C8DF24A6CDC600FFA583 /* Build configuration list for PBXProject "APOD-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E34C8F624A6CDCD00FFA583 /* Debug */,
+				4E34C8F724A6CDCD00FFA583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E34C8F824A6CDCD00FFA583 /* Build configuration list for PBXNativeTarget "APOD-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E34C8F924A6CDCD00FFA583 /* Debug */,
+				4E34C8FA24A6CDCD00FFA583 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E34C8DC24A6CDC600FFA583 /* Project object */;
+}
